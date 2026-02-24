@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Sudoku Solver.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-calculator"></i> Sudoku Solver</h1>
+      <p class="subtitle">Enter a puzzle and I'll solve it before you know it!</p>
+    </header>
+    
+    <div class="game-area">
+      <div class="left-panel">
+        <div class="sudoku-board" id="solver-board"></div>
+      </div>
+      
+      <div class="right-panel">
+        <div class="numpad" id="solver-numpad">
+          <button class="numpad-btn" data-value="1">1</button>
+          <button class="numpad-btn" data-value="2">2</button>
+          <button class="numpad-btn" data-value="3">3</button>
+          <button class="numpad-btn" data-value="4">4</button>
+          <button class="numpad-btn" data-value="5">5</button>
+          <button class="numpad-btn" data-value="6">6</button>
+          <button class="numpad-btn" data-value="7">7</button>
+          <button class="numpad-btn" data-value="8">8</button>
+          <button class="numpad-btn" data-value="9">9</button>
+          <button class="numpad-btn" data-value="0"><i class="fas fa-eraser"></i> Clear</button>
+        </div>
+        
+        <div class="controls">
+          <button class="btn-warning" id="verify"><i class="fas fa-question-circle"></i> Verify</button>
+          <button class="btn-success" id="solve-solver"><i class="fas fa-lightbulb"></i> Solve</button>
+          <button class="btn-danger" id="reset-solver"><i class="fas fa-redo"></i> Reset</button>
+        </div>
+        
+        <div class="message info" id="solver-message">Enter a Sudoku puzzle to verify its solvablity or to solve it.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Sudoku Solver.js"></script>
+</body>
+</html>
